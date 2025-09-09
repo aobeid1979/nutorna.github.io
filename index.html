@@ -3,9 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nutorna Trading - Professional Trading Platform</title>
+    <meta name="description" content="Nutorna Trading - Your gateway to global financial markets. Trade stocks, forex, commodities and more with our advanced trading platform.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hi from the very first day</h1>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Nutorna<span class="accent">Trading</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#markets">Markets</a></li>
+                    <li><a href="#platform">Platform</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn btn-outline">Login</button>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Trade with Confidence</h1>
+                <p class="hero-subtitle">Access global financial markets with our advanced trading platform. Trade stocks, forex, commodities, and cryptocurrencies with competitive spreads and professional tools.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large">Start Trading</button>
+                    <button class="btn btn-outline btn-large">Try Demo</button>
+                </div>
+            </div>
+            <div class="hero-chart">
+                <div class="chart-placeholder">
+                    <canvas id="priceChart" width="500" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Overview -->
+    <section id="markets" class="markets">
+        <div class="container">
+            <h2 class="section-title">Live Market Data</h2>
+            <div class="market-grid">
+                <div class="market-item">
+                    <div class="instrument">EUR/USD</div>
+                    <div class="price">1.0847</div>
+                    <div class="change positive">+0.0023 (+0.21%)</div>
+                </div>
+                <div class="market-item">
+                    <div class="instrument">GBP/USD</div>
+                    <div class="price">1.2634</div>
+                    <div class="change negative">-0.0089 (-0.70%)</div>
+                </div>
+                <div class="market-item">
+                    <div class="instrument">USD/JPY</div>
+                    <div class="price">149.82</div>
+                    <div class="change positive">+0.34 (+0.23%)</div>
+                </div>
+                <div class="market-item">
+                    <div class="instrument">AAPL</div>
+                    <div class="price">$189.95</div>
+                    <div class="change positive">+2.34 (+1.25%)</div>
+                </div>
+                <div class="market-item">
+                    <div class="instrument">Gold</div>
+                    <div class="price">$2,034.50</div>
+                    <div class="change negative">-8.20 (-0.40%)</div>
+                </div>
+                <div class="market-item">
+                    <div class="instrument">Bitcoin</div>
+                    <div class="price">$43,250</div>
+                    <div class="change positive">+890 (+2.10%)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Platform Features -->
+    <section id="platform" class="platform">
+        <div class="container">
+            <h2 class="section-title">Professional Trading Platform</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Advanced Charts</h3>
+                    <p>Professional-grade charting tools with 100+ technical indicators and drawing tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Execution</h3>
+                    <p>Ultra-low latency order execution with competitive spreads across all markets.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Risk Management</h3>
+                    <p>Comprehensive risk management tools including stop-loss and take-profit orders.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Trading</h3>
+                    <p>Trade on the go with our fully-featured mobile applications for iOS and Android.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Why Choose Nutorna Trading?</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Trusted by Traders Worldwide</h3>
+                        <p>With over a decade of experience in financial markets, Nutorna Trading provides a secure and reliable platform for traders of all levels. Our commitment to transparency, competitive pricing, and exceptional customer service has made us a preferred choice for traders globally.</p>
+                        <ul class="benefits-list">
+                            <li>Regulated and licensed</li>
+                            <li>24/7 customer support</li>
+                            <li>No hidden fees</li>
+                            <li>Advanced security measures</li>
+                        </ul>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500K+</div>
+                            <div class="stat-label">Active Traders</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">$50B+</div>
+                            <div class="stat-label">Monthly Volume</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">Trading Instruments</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get Started Today</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to start trading?</h3>
+                    <p>Join thousands of traders who trust Nutorna Trading for their investment needs.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Support:</strong> support@nutorna.com
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong> +1 (555) 123-4567
+                        </div>
+                        <div class="contact-item">
+                            <strong>Hours:</strong> 24/7 Trading Support
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="form">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="tel" placeholder="Phone Number">
+                        <select required>
+                            <option value="">Trading Experience</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary btn-large">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Nutorna<span class="accent">Trading</span></h3>
+                    <p>Professional trading platform for global financial markets.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Trading</h4>
+                        <a href="#">Forex</a>
+                        <a href="#">Stocks</a>
+                        <a href="#">Commodities</a>
+                        <a href="#">Crypto</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Platform</h4>
+                        <a href="#">Web Trader</a>
+                        <a href="#">Mobile App</a>
+                        <a href="#">API</a>
+                        <a href="#">Tools</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Education</a>
+                        <a href="#">Webinars</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nutorna Trading. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p class="disclaimer">Risk Warning: Trading involves substantial risk and may result in loss of capital.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
